@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento - Vip Cortes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+
+  <body class="body">
+    <header class="container">
+      <button class="menu-icon" aria-label="Abrir menu">
+        <img src="./HTML/assets/menu (sidebar).png" alt="" />
+      </button>
+      <section class="container_left">
+        <img
+          src="./HTML/assets/Vip cortes logo.png"
+          alt="Logo Vip Cortes"
+          class="logo"
+        />
+        <a href="index.html" class="item"><b>Home</b></a>
+        <a href="AGENDAR.html" class="agendar"><b>Agendar</b></a>
+        <a href="Avaliações.html" class="item"><b>Avaliações</b></a>
+      </section>
+      <section class="container_right">
+        <a href="./indexfidelidade.html" class="entrar"><b>Entrar</b></a>
+        <a href="./indexconta.html" class="entrar2"><b>Cadastre-se</b></a>
+      </section>
+    </header>
+
+    <main class="main1">
+      <section class="form">
+        <form>
+          <h1>AGENDAMENTO</h1>
+
+          <input
+            class="texto"
+            id="nome"
+            name="nome"
+            placeholder="Nome completo:"
+            required
+          />
+
+          <input
+            class="fone"
+            id="idade"
+            name="idade"
+            placeholder="Idade:"
+            maxlength="2"
+            required
+          />
+
+          <input
+            class="idade"
+            id="fone"
+            name="fone"
+            placeholder="Telefone: (xx) x xxxx xxxx"
+            maxlength="16"
+            required
+          />
+
+          <input
+            class="date"
+            type="date"
+            id="dia"
+            name="dia"
+            placeholder="Data:"
+            required
+          />
+
+          <input
+            class="horario"
+            type="time"
+            id="horario"
+            name="horario"
+            placeholder="Horário"
+            required
+          />
+
+          <select id="servicos" name="servicos" required>
+            <option disabled selected>- Selecione uma opção -</option>
+            <option value="corte-cabelo">Corte-cabelo</option>
+            <option value="corte-barba">Corte barba</option>
+            <option value="combo-cabelo-barba">Combo cabelo + barba</option>
+            <a class="enviar" href="index2.html">
+              <button class="enviar"><b>ENVIAR</b></button></a>
+          </select>
+        </form>
+
+        <a class="enviar" id="enviarb" href="index2.html">
+          <button class="enviar"><b>ENVIAR</b></button></a>
+      </section>
+    </main>
+
+    <script src="agendar.js"></script>
+    
+  </body>
+</html>

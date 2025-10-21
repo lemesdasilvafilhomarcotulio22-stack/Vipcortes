@@ -1,0 +1,205 @@
+/* 1. Reset e Variáveis */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Big Shoulders", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+  
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+    font-size: 24px;
+}
+.item2{
+    color: #ffbd59;
+}
+
+
+/* ===== HEADER (Barra de Navegação) ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Padding para margens laterais estáveis */
+    padding: 1.5em 2%; 
+    
+    /* REMOVIDO o border-bottom daqui. Ele será aplicado pela div .line-branca-one */
+}
+
+.imagem img {
+    height: 60px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1; 
+    padding: 0 2em;
+}
+
+.margem-esquerda {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-start;
+}
+
+.margem-direita {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+}
+
+.item, .item22 {
+    /* Tamanho de fonte que escala com o viewport (vw) */
+    font-size: 24px; 
+    white-space: nowrap; /* Evita quebra de linha */
+}
+
+.item2 {
+    color: #ffbd59;
+    /* SOLICITADO: REMOVER o quadrado/borda do "Cadastre-se" */
+    border: none; 
+    padding: 0;
+    font-size: 24px;
+}
+
+/* ===== DIVISORES E TÍTULO (ADMINISTRAÇÃO) ===== */
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    position: relative;
+   display: flex;
+    justify-content: center;
+    display: flex;
+    top: 3vh;
+
+    /* Usaremos margem para espaçamento vertical e as divs de linha */
+}
+
+/* SOLICITADO: A linha amarela deve ter 3px */
+.line-branca-one {
+    width: 100%;
+    height: 3px; /* APLICADO: 3px para a linha amarela */
+    background-color: var(--gold);
+    /* A margem acima da linha dourada deve ser 0 */
+    margin: 0;
+    display: block;
+}
+
+.line-branca-two {
+    width: 100%;
+    height: 1px; /* Linha branca mais fina, ajustada para a margem */
+    background-color: white;
+    /* Ajuste a margem abaixo do título */
+    margin-top: 15px; 
+    display: block;
+}
+
+.title-admin {
+    /* POSICIONAMENTO CORRIGIDO: O título fica entre as linhas */
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    /* Margens para separar das linhas */
+    padding: 20px 0; 
+    line-height: 1;
+}
+
+/* ===== TABELA RESPONSIVA ===== */
+.tabela-container {
+    width: 100%;
+    /* Margem para separar da linha branca */
+    margin-top: 2em; 
+    padding: 0 2%; /* Margem lateral para a tabela */
+    overflow-x: auto; /* ESSENCIAL: Permite rolagem horizontal */
+}
+
+.agenda {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Garante que não fique ilegível no mobile */
+}
+
+.agenda thead tr {
+    border-bottom: 2px solid var(--white); 
+}
+
+.agenda th {
+    /* Largura em porcentagem para que as colunas se ajustem */
+    width: 15%; 
+    padding: 0.8em 0.5em;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.agenda td {
+    padding: 0.8em 0.5em;
+    font-size: 0.9em;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
+}
+
+.btn-excluir {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 0.9em;
+    width: 90%; 
+    max-width: 100px;
+}
+
+/* 6. Media Query para Mobile (Menor que 950px) */
+@media (max-width: 950px) {
+    
+    /* FAZ OS LINKS DO NAV-MAIN SUMIREM */
+    .margem-esquerda {
+        display: none; 
+    }
+
+    /* O menu de autenticação se ajusta */
+    .margem-direita {
+        margin-left: auto;
+    }
+    
+    .imagem img {
+        height: 40px;
+    }
+
+    /* O Título de Administração é ajustado (apenas tamanho) */
+    .title-admin {
+        font-size: 32px;
+        padding: 15px 0;
+    }
+
+    /* Tabela: A rolagem horizontal garante a responsividade */
+    .tabela-container {
+        margin-top: 1.5em; 
+    }
+}

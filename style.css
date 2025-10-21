@@ -1,0 +1,2520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.bodyhome {
+    height: 3600px;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+    min-width: 320px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.item,
+.entrar {
+    color: white;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+}
+
+.entrar2 {
+    color: #f0b65f;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+}
+
+.logo {
+    height: 90px;
+    width: 120px;
+    align-items: center;
+}
+
+.container_left {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+    padding: 0px 1%;
+}
+
+.container_right {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+.item:hover,
+.entrar:hover,
+.entrar2:hover {
+    transform: scale(1.2);
+}
+
+.menu-icon {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: none;
+    cursor: pointer;
+    padding: 0px 2%;
+}
+
+.menu-icon img {
+    height: 50px;
+    width: 50px;
+}
+
+.barber_background {
+    opacity: calc(35%);
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    min-width: auto;
+}
+
+.sombra {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    min-width: auto;
+    z-index: 1;
+}
+
+.fundo {
+    position: relative;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.logo_main {
+    display: block;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    position: absolute;
+    top: 10%;
+    width: 450px;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: -210px;
+}
+
+.slogan {
+    color: white;
+    font-style: italic;
+    font-family: "Lora", serif;
+    font-size: 25px;
+    object-fit: contain;
+    pointer-events: none;
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+}
+
+.botao-principal {
+    object-fit: contain;
+    position: absolute;
+    top: 48%;
+    align-items: center;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    width: 297px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 39px;
+    color: white;
+    border-radius: 148px;
+    background-color: #E8AD54;
+    z-index: 100;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main span {
+    padding-bottom: 2%;
+}
+
+.main img {
+    object-fit: cover;
+}
+
+.botao-principal:hover {
+    background-color: #d18f2c;
+    cursor: pointer;
+}
+
+.corte1 {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 11;
+}
+
+.corte2 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.sobrenos {
+    font-family: "Big Shoulders", sans-serif;
+    position: absolute;
+    top: 680px;
+    left: 490px;
+    color: white;
+    width: 129px;
+    height: 43px;
+}
+
+.nos {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 735px;
+    left: 490px;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    z-index: 2;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    z-index: 3;
+}
+
+.cadeirante {
+    width: 29px;
+    height: auto;
+    position: absolute;
+    top: 109%;
+    left: 13%;
+    z-index: 2;
+}
+
+.controle {
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 131%;
+    left: 61%;
+    z-index: 2;
+}
+
+.cadeira {
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 109%;
+    left: 61%;
+    z-index: 2;
+}
+
+.filho {
+    width: 27px;
+    height: auto;
+    position: absolute;
+    top: 131%;
+    left: 13%;
+    z-index: 2;
+}
+
+.acessibilidade {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 962px;
+    left: 310px;
+    color: white;
+    width: 453px;
+    z-index: 2;
+}
+
+.game {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 1165px;
+    left: 1255px;
+    ;
+    color: white;
+    width: 453px;
+    z-index: 2;
+}
+
+.conforto {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 962px;
+    left: 1255px;
+    color: white;
+    width: 450px;
+    z-index: 2;
+}
+
+.familia {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 1130px;
+    left: 310px;
+    color: white;
+    width: 420px;
+    z-index: 2;
+}
+
+.line2 {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 154.5%;
+    background-color: white;
+}
+
+
+.line3 {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 155%;
+    background-color: white;
+}
+
+.combo {
+    position: absolute;
+    top: 164.8%;
+    left: 3%;
+    width: 579px;
+    height: 350px;
+}
+
+.corte {
+    position: absolute;
+    top: 164.8%;
+    left: 35.5%;
+    width: 579px;
+    height: 350px;
+}
+
+.design {
+    position: absolute;
+    top: 164.8%;
+    left: 67.7%;
+    width: 579px;
+    height: 350px;
+}
+
+.titulo1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 1530px;
+    left: 75px;
+    cursor: default;
+}
+
+.titulo2 {
+    color: white;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 1530px;
+    left: 689px;
+    cursor: default;
+}
+
+.titulo3 {
+    color: white;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 1530px;
+    left: 1330px;
+    cursor: default;
+}
+
+.combo,
+.corte,
+.design {
+    border: solid 4px;
+    border-color: white;
+    opacity: calc(75%);
+}
+
+.texto1,
+.texto2,
+.texto3 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+.preco1,
+.preco2,
+.preco3 {
+    font-size: 35px;
+    font-family: "Big Shoulders", sans-serif;
+    color: #ffbe0d
+}
+
+.preco1 {
+    position: absolute;
+    top: 1785px;
+    left: 490px;
+}
+
+.preco2 {
+    position: absolute;
+    top: 1785px;
+    left: 1120px;
+}
+
+.preco3 {
+    position: absolute;
+    top: 1785px;
+    left: 1735px;
+}
+
+.texto1 {
+    position: absolute;
+    top: 1580px;
+    left: 80px;
+    width: 490px;
+    cursor: default;
+}
+
+.texto2 {
+    position: absolute;
+    top: 1580px;
+    left: 690px;
+    width: 570px;
+    cursor: default;
+}
+
+.texto3 {
+    position: absolute;
+    top: 1580px;
+    left: 1310px;
+    width: 550px;
+    cursor: default;
+}
+
+.botao1,
+.botao2,
+.botao3 {
+    border: none;
+    cursor: pointer;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    background-color: #E8AD54;
+    width: 135px;
+    height: 50px;
+    font-family: "Lora", serif;
+}
+
+.botao1 {
+    position: absolute;
+    top: 1781px;
+    left: 70px;
+}
+
+.botao2 {
+    position: absolute;
+    top: 1781px;
+    left: 699px;
+}
+
+.botao3 {
+    position: absolute;
+    top: 1781px;
+    left: 1315px;
+}
+
+.botao1:hover {
+    background-color: #d18f2c;
+}
+
+.botao2:hover {
+    background-color: #d18f2c;
+}
+
+.botao3:hover {
+    background-color: #d18f2c;
+}
+
+.vermais {
+    position: absolute;
+    top: 250%;
+    left: 43%;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.perfil1 {
+    position: absolute;
+    top: 218%;
+    left: 9%;
+    height: 70px;
+    width: 70px;
+}
+
+.perfil2 {
+    position: absolute;
+    top: 218%;
+    left: 36.5%;
+    height: 70px;
+    width: 70px;
+}
+
+.perfil3 {
+    position: absolute;
+    top: 218%;
+    left: 63.5%;
+    height: 70px;
+    width: 70px;
+}
+
+.quadrado1 {
+    position: absolute;
+    top: 224%;
+    left: 13%;
+    width: 380px;
+    height: 200px;
+    background-color: #ffbd59;
+    border-radius: 20px;
+}
+
+.quadrado2 {
+    position: absolute;
+    top: 224%;
+    left: 40%;
+    width: 380px;
+    height: 200px;
+    background-color: #ffbd59;
+    border-radius: 20px;
+}
+
+.quadrado3 {
+    position: absolute;
+    top: 224%;
+    left: 67%;
+    width: 380px;
+    height: 200px;
+    background-color: #ffbd59;
+    border-radius: 20px;
+}
+
+.joao {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 219%;
+    left: 13.5%;
+    color: white;
+    font-size: 25px;
+}
+
+.mateus {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 219%;
+    left: 40.5%;
+    color: white;
+    font-size: 25px;
+}
+
+.ademar {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 219%;
+    left: 67.5%;
+    color: white;
+    font-size: 25px;
+}
+
+.av1 {
+    font-size: 23px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    width: 260px;
+    top: 226%;
+    left: 14%;
+    z-index: 1;
+}
+
+.av2 {
+    font-size: 23px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    width: 310px;
+    top: 226%;
+    left: 41%;
+    z-index: 1;
+}
+
+.av3 {
+    font-size: 23px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    width: 340px;
+    top: 226%;
+    left: 67.5%;
+    z-index: 1;
+}
+
+.line4 {
+    height: 2px;
+    width: 1200px;
+    position: absolute;
+    top: 255%;
+    left: 17.3%;
+    background-color: white;
+}
+
+.line5 {
+    height: 2px;
+    width: 900px;
+    position: absolute;
+    top: 256%;
+    left: 24.5%;
+    background-color: white;
+}
+
+.line6 {
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 1910px;
+    background-color: white;
+}
+
+.ajuste {
+    height: auto;
+    width: 100%;
+    min-width: 320;
+    position: absolute;
+    top: 258%;
+    opacity: calc(90%);
+    border-top: solid 3px #ffffff;
+    border-bottom: solid 3px white;
+}
+
+.retangulo1 {
+    position: absolute;
+    top: 274%;
+    left: 15.5%;
+    width: 350px;
+    height: 290px;
+    border: solid 5px #ffbb00;
+    background-color: #ff000000;
+}
+
+.retangulo2 {
+    position: absolute;
+    top: 269%;
+    left: 13.5%;
+    width: 430px;
+    height: 390px;
+    border: solid 5px #ffbb00;
+    background-color: #14101000;
+}
+
+.visual {
+    font-family: "Big Shoulders", sans-serif;
+    position: absolute;
+    top: 279%;
+    left: 17%;
+    color: white;
+    font-size: 45px;
+    width: 300px;
+    font-weight: lighter;
+    z-index: 99;
+}
+
+.visual2 {
+    font-family: "Big Shoulders", sans-serif;
+    position: absolute;
+    top: 285.5%;
+    left: 22%;
+    color: white;
+    font-size: 45px;
+    width: 280px;
+    font-weight: lighter;
+    z-index: 99;
+}
+
+.vip {
+    font-family: "Big Shoulders", sans-serif;
+    position: absolute;
+    top: 285.5%;
+    left: 19%;
+    color: #ffbd59;
+    font-size: 45px;
+    width: 280px;
+
+    z-index: 99;
+}
+
+.botao4 {
+    border: none;
+    cursor: pointer;
+    font-family: "Big Shoulders", sans-serif;
+    color: white;
+    position: absolute;
+    top: 296%;
+    left: 21%;
+    font-size: 29px;
+    border-radius: 40px;
+    background-color: #E8AD54;
+    width: 140px;
+    height: 50px;
+}
+
+.botao4:hover {
+    background-color: #d18f2c;
+}
+
+
+
+.onde {
+    position: absolute;
+    font-size: 56px;
+    top: 3025px;
+    font-weight: lighter;
+    left: 230px;
+    color: #f0b65f;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.endereço {
+    position: absolute;
+    font-size: 25px;
+    top: 3110px;
+    left: 100px;
+    width: 600px;
+    color: #ffffff;
+    font-family: "Lora", serif;
+}
+
+.titcontatos {
+    position: absolute;
+    font-size: 35px;
+    top: 3305px;
+    left: 1280px;
+    width: 600px;
+    color: #f0b65f;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.contatos1 {
+    color: white;
+    position: absolute;
+    font-family: "Big Shoulders", sans-serif;
+    top: 3370px;
+    left: 1100px;
+    font-size: 40px;
+
+
+}
+
+.contatos2 {
+    color: white;
+    position: absolute;
+    font-family: "Big Shoulders", sans-serif;
+    top: 3435px;
+    left: 1100px;
+    font-size: 40px;
+
+}
+
+.local {
+    position: absolute;
+    top: 3200px;
+    width: 589px;
+    left: 90px;
+    border-radius: 35px;
+}
+
+.Dia,
+.Horario,
+.segunda,
+.sabado,
+.hora1,
+.hora2 {
+    font-family: "Big Shoulders", sans-serif;
+    color: white;
+    display: flex;
+}
+
+.Dia {
+    position: absolute;
+    top: 3100px;
+    left: 1100px;
+    font-size: 40px;
+}
+
+.Horario {
+    position: absolute;
+    top: 3100px;
+    left: 1500px;
+    font-size: 40px;
+}
+
+.segunda {
+    position: absolute;
+    top: 3180px;
+    left: 1098px;
+    font-size: 35px;
+}
+
+.sabado {
+    position: absolute;
+    top: 3235px;
+    left: 1098px;
+    font-size: 35px;
+}
+
+.hora1 {
+    position: absolute;
+    top: 3180px;
+    left: 1500px;
+    font-size: 35px;
+}
+
+.hora2 {
+    position: absolute;
+    top: 3235px;
+    left: 1500px;
+    font-size: 35px;
+}
+
+@media (max-width: 1079px) {
+
+    .item,
+    .entrar,
+    .entrar2 {
+        display: none;
+    }
+
+    .menu-icon {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .slogan {
+        top: 35%;
+    }
+
+    .botao-principal {
+        top: 42%;
+    }
+}
+
+
+@media (max-width: 1380px) {
+    .botao-principal {
+        height: 55px;
+        width: 200px;
+        font-size: 30px;
+        object-fit: contain;
+        position: absolute;
+        top: 58%
+    }
+
+    .slogan {
+        position: absolute;
+        top: 48%;
+        font-size: 20px;
+    }
+
+    .logo_main {
+        width: 320px;
+        height: auto;
+        position: absolute;
+        top: 20%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo_main {
+        width: 320px;
+        height: auto;
+        top: 15%;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo_main {
+        width: 255px;
+        height: 200px;
+        top: 15%;
+    }
+
+    .botao-principal {
+        height: 55px;
+        width: 200px;
+        font-size: 30px;
+        object-fit: contain;
+        position: absolute;
+        top: 62%
+    }
+
+}
+
+@media (max-width: 650px) {
+    .menu-icon img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 85px;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    .container {
+        height: 55px;
+    }
+
+    .botao-principal {
+        width: 100px;
+        height: 25px;
+        font-size: 15px;
+        object-fit: contain;
+        position: absolute;
+        top: 70%
+    }
+
+    .slogan {
+        position: absolute;
+        top: 60%;
+        font-size: 10px;
+    }
+
+    .logo_main {
+        width: 170px;
+        height: auto;
+        position: absolute;
+        top: 25%;
+    }
+
+    .combo {
+        position: absolute;
+        top: 121%;
+        left: 6%;
+        width: 330px;
+        height: auto;
+    }
+
+    .corte {
+        position: absolute;
+        top: 151%;
+        left: 6%;
+        width: 330px;
+        height: auto;
+    }
+
+    .design {
+        position: absolute;
+        top: 181%;
+        left: 6%;
+        width: 330px;
+        height: 500px;
+    }
+
+    @media (max-width:510px) {
+        .bodyhome {
+            height: 2200px;
+        }
+
+        .menu-icon img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo {
+            height: 60px;
+            width: 85px;
+            object-fit: cover;
+            justify-content: center;
+        }
+
+        .container {
+            height: 55px;
+        }
+
+        .botao-principal {
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+            object-fit: contain;
+            position: absolute;
+            top: 88%
+        }
+
+        .slogan {
+            position: absolute;
+            top: 75%;
+            font-size: 10px;
+        }
+
+        .logo_main {
+            width: 170px;
+            height: auto;
+            position: absolute;
+            top: 25%;
+        }
+
+        .corte1 {
+            position: absolute;
+            top: 38%;
+            left: 5%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 11;
+        }
+
+        .corte2 {
+            position: absolute;
+            top: 41%;
+            left: 16%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        .sobrenos {
+            font-family: "Big Shoulders", sans-serif;
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            font-size: 15px;
+            color: white;
+            width: 129px;
+            height: 43px;
+        }
+
+        .nos {
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 42.5%;
+            left: 50%;
+            color: white;
+            font-size: 12px;
+            width: 175px;
+            z-index: 2;
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 53.5%;
+            background-color: white;
+            z-index: 3;
+        }
+
+        .cadeirante {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 60%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .controle {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 93%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .cadeira {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 61%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .filho {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 91%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .acessibilidade {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 18%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .game {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .conforto {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .familia {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 18%;
+            color: white;
+            width: 130px;
+            z-index: 2;
+        }
+
+        .line2 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 117.5%;
+            background-color: white;
+            z-index: 9;
+        }
+
+
+        .line3 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 118%;
+            background-color: white;
+        }
+
+        .combo {
+            position: absolute;
+            top: 121%;
+            left: 6%;
+            width: 381px;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .corte {
+            position: absolute;
+            top: 151%;
+            left: 6%;
+            width: 381px;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .design {
+            position: absolute;
+            top: 181%;
+            left: 6%;
+            width: 381px;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .combo,
+        .corte,
+        .design {
+            border: solid 4px;
+            border-color: white;
+            opacity: calc(75%);
+        }
+
+        .texto1,
+        .texto2,
+        .texto3 {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            color: white;
+        }
+
+        .preco1,
+        .preco2,
+        .preco3 {
+            font-size: 25px;
+            font-family: "Big Shoulders", sans-serif;
+            color: #ffbe0d
+        }
+
+        .preco1 {
+            position: absolute;
+            top: 143%;
+            left: 9%;
+        }
+
+        .preco2 {
+            position: absolute;
+            top: 173.5%;
+            left: 9%;
+        }
+
+        .preco3 {
+            position: absolute;
+            top: 204%;
+            left: 9%;
+        }
+
+        .texto1 {
+            position: absolute;
+            top: 128%;
+            left: 9%;
+            width: 220px;
+            cursor: default;
+        }
+
+        .texto2 {
+            position: absolute;
+            top: 157%;
+            left: 9%;
+            width: 260px;
+            cursor: default;
+        }
+
+        .texto3 {
+            position: absolute;
+            top: 189%;
+            left: 9%;
+            width: 240px;
+            cursor: default;
+        }
+
+        .titulo1 {
+            color: white;
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 123%;
+            width: 290px;
+            left: 10%;
+            cursor: default;
+        }
+
+        .titulo2 {
+            color: white;
+            font-size: 20px;
+            top: 152%;
+            width: 330px;
+            left: 10%;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            cursor: default;
+        }
+
+        .titulo3 {
+            color: white;
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 183%;
+            left: 10%;
+            cursor: default;
+        }
+
+        .botao1 {
+            position: absolute;
+            top: 143%;
+            left: 65%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao2 {
+            position: absolute;
+            top: 173.3%;
+            left: 65%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao3 {
+            position: absolute;
+            top: 204%;
+            left: 65%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .line6 {
+            height: 1px;
+            top: 213%;
+        }
+
+        .avaliacoes-main {
+            display: none;
+        }
+
+        .line4,
+        .line5 {
+            display: none;
+        }
+
+        .ajuste {
+            height: auto;
+            width: 100%;
+            min-width: 320;
+            position: absolute;
+            top: 214%;
+            opacity: calc(90%);
+            border-top: solid 3px #ffffff;
+            border-bottom: solid 3px white;
+        }
+
+        .retangulo1 {
+            position: absolute;
+            top: 217%;
+            left: 7.5%;
+            width: 180px;
+            height: 80px;
+            border: solid 3px #ffbb00;
+            background-color: #ff000000;
+        }
+
+        .retangulo2 {
+            position: absolute;
+            top: 215.5%;
+            left: 5%;
+            width: 200px;
+            height: 100px;
+            border: solid 3px #ffbb00;
+            background-color: #14101000;
+        }
+
+        .ajuste-no-visual {
+            display: none;
+        }
+
+        .botao4:hover {
+            background-color: #d18f2c;
+        }
+
+
+
+        .onde {
+            position: absolute;
+            font-size: 23px;
+            top: 215%;
+            font-weight: lighter;
+            left: 5%;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .endereço {
+            position: absolute;
+            font-size: 13px;
+            top: 219%;
+            left: 5%;
+            width: 200px;
+            color: #ffffff;
+            font-family: "Lora", serif;
+        }
+
+        .titcontatos {
+            position: absolute;
+            font-size: 15px;
+            top: 226%;
+            left: 65%;
+            width: 100px;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .contatos1 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 229%;
+            left: 55%;
+            font-size: 15px;
+
+
+        }
+
+        .contatos2 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 231.5%;
+            left: 55%;
+            font-size: 15px;
+
+        }
+
+        .local {
+            position: absolute;
+            top: 223%;
+            width: 200px;
+            height: auto;
+            left: 5%;
+            border-radius: 15px;
+        }
+
+        .Dia,
+        .Horario,
+        .segunda,
+        .sabado,
+        .hora1,
+        .hora2 {
+            font-family: "Big Shoulders", sans-serif;
+            color: white;
+            display: flex;
+            font-size: 15px;
+        }
+
+        .Dia {
+            position: absolute;
+            top: 217%;
+            left: 55%;
+        }
+
+        .Horario {
+            position: absolute;
+            top: 217%;
+            left: 80%;
+        }
+
+        .segunda {
+            position: absolute;
+            top: 219.5%;
+            left: 55%;
+        }
+
+        .sabado {
+            position: absolute;
+            top: 222%;
+            left: 55%;
+        }
+
+        .hora1 {
+            position: absolute;
+            top: 219.5%;
+            left: 80%;
+        }
+
+        .hora2 {
+            position: absolute;
+            top: 222%;
+            left: 80%;
+        }
+    }
+}
+
+@media (min-width: 410px) {
+    @media (max-width: 410px) {
+        .bodyhome {
+            height: 2000px;
+        }
+
+        .menu-icon img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo {
+            height: 60px;
+            width: 85px;
+            object-fit: cover;
+            justify-content: center;
+        }
+
+        .container {
+            height: 55px;
+        }
+
+        .botao-principal {
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+            object-fit: contain;
+            position: absolute;
+            top: 88%
+        }
+
+        .slogan {
+            position: absolute;
+            top: 75%;
+            font-size: 10px;
+        }
+
+        .logo_main {
+            width: 170px;
+            height: auto;
+            position: absolute;
+            top: 25%;
+        }
+
+        .corte1 {
+            position: absolute;
+            top: 38%;
+            left: 5%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 11;
+        }
+
+        .corte2 {
+            position: absolute;
+            top: 41%;
+            left: 16%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        .sobrenos {
+            font-family: "Big Shoulders", sans-serif;
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            font-size: 15px;
+            color: white;
+            width: 129px;
+            height: 43px;
+        }
+
+        .nos {
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 42.5%;
+            left: 50%;
+            color: white;
+            font-size: 12px;
+            width: 175px;
+            z-index: 2;
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 53.5%;
+            background-color: white;
+            z-index: 3;
+        }
+
+        .cadeirante {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 60%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .controle {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 93%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .cadeira {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 61%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .filho {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 91%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .acessibilidade {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 18%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .game {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .conforto {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .familia {
+            font-size: 12px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 18%;
+            color: white;
+            width: 130px;
+            z-index: 2;
+        }
+
+        .line2 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 117.5%;
+            background-color: white;
+            z-index: 9;
+        }
+
+
+        .line3 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 118%;
+            background-color: white;
+        }
+
+        .combo {
+            position: absolute;
+            top: 121%;
+            left: 3%;
+            width: 330px;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .corte {
+            position: absolute;
+            top: 151%;
+            left: 6%;
+            width: 330px;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .design {
+            position: absolute;
+            top: 181%;
+            left: 6%;
+            width: 330px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .combo,
+        .corte,
+        .design {
+            border: solid 4px;
+            border-color: white;
+            opacity: calc(75%);
+        }
+
+        .texto1,
+        .texto2,
+        .texto3 {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            color: white;
+        }
+
+        .preco1,
+        .preco2,
+        .preco3 {
+            font-size: 25px;
+            font-family: "Big Shoulders", sans-serif;
+            color: #ffbe0d
+        }
+
+        .preco1 {
+            position: absolute;
+            top: 143%;
+            left: 9%;
+        }
+
+        .preco2 {
+            position: absolute;
+            top: 173.5%;
+            left: 9%;
+        }
+
+        .preco3 {
+            position: absolute;
+            top: 205.5%;
+            left: 9%;
+        }
+
+        .texto1 {
+            position: absolute;
+            top: 128%;
+            left: 9%;
+            width: 220px;
+            cursor: default;
+        }
+
+        .texto2 {
+            position: absolute;
+            top: 157%;
+            left: 9%;
+            width: 260px;
+            cursor: default;
+        }
+
+        .texto3 {
+            position: absolute;
+            top: 189%;
+            left: 9%;
+            width: 240px;
+            cursor: default;
+        }
+
+        .titulo1 {
+            color: white;
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 123%;
+            width: 290px;
+            left: 10%;
+            cursor: default;
+        }
+
+        .titulo2 {
+            color: white;
+            font-size: 20px;
+            top: 152%;
+            width: 330px;
+            left: 10%;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            cursor: default;
+        }
+
+        .titulo3 {
+            color: white;
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 183%;
+            left: 10%;
+            cursor: default;
+        }
+
+        .botao1 {
+            position: absolute;
+            top: 143%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao2 {
+            position: absolute;
+            top: 173.3%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao3 {
+            position: absolute;
+            top: 205.5%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .line6 {
+            height: 1px;
+            top: 213%;
+        }
+
+        .avaliacoes-main {
+            display: none;
+        }
+
+        .line4,
+        .line5 {
+            display: none;
+        }
+
+        .ajuste {
+            height: auto;
+            width: 100%;
+            min-width: 320;
+            position: absolute;
+            top: 214%;
+            opacity: calc(90%);
+            border-top: solid 3px #ffffff;
+            border-bottom: solid 3px white;
+        }
+
+        .retangulo1 {
+            position: absolute;
+            top: 217%;
+            left: 7.5%;
+            width: 180px;
+            height: 80px;
+            border: solid 3px #ffbb00;
+            background-color: #ff000000;
+        }
+
+        .retangulo2 {
+            position: absolute;
+            top: 215.5%;
+            left: 5%;
+            width: 200px;
+            height: 100px;
+            border: solid 3px #ffbb00;
+            background-color: #14101000;
+        }
+
+        .ajuste-no-visual {
+            display: none;
+        }
+
+        .botao4:hover {
+            background-color: #d18f2c;
+        }
+
+
+
+        .onde {
+            position: absolute;
+            font-size: 20px;
+            top: 215%;
+            font-weight: lighter;
+            left: 5%;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .endereço {
+            position: absolute;
+            font-size: 11px;
+            top: 219%;
+            left: 5%;
+            width: 200px;
+            color: #ffffff;
+            font-family: "Lora", serif;
+        }
+
+        .titcontatos {
+            position: absolute;
+            font-size: 11px;
+            top: 228%;
+            left: 65%;
+            width: 100px;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .contatos1 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 231%;
+            left: 55%;
+            font-size: 11px;
+
+
+        }
+
+        .contatos2 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 233.5%;
+            left: 55%;
+            font-size: 11px;
+
+        }
+
+        .local {
+            position: absolute;
+            top: 225%;
+            width: 170px;
+            height: auto;
+            left: 5%;
+            border-radius: 15px;
+        }
+
+        .Dia,
+        .Horario,
+        .segunda,
+        .sabado,
+        .hora1,
+        .hora2 {
+            font-family: "Big Shoulders", sans-serif;
+            color: white;
+            display: flex;
+            font-size: 11px;
+        }
+
+        .Dia {
+            position: absolute;
+            top: 217%;
+            left: 55%;
+        }
+
+        .Horario {
+            position: absolute;
+            top: 217%;
+            left: 80%;
+        }
+
+        .segunda {
+            position: absolute;
+            top: 219.5%;
+            left: 55%;
+        }
+
+        .sabado {
+            position: absolute;
+            top: 222%;
+            left: 55%;
+        }
+
+        .hora1 {
+            position: absolute;
+            top: 219.5%;
+            left: 80%;
+        }
+
+        .hora2 {
+            position: absolute;
+            top: 222%;
+            left: 80%;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+
+        .bodyhome {
+            height: 2000px;
+        }
+
+        .menu-icon img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo {
+            height: 60px;
+            width: 85px;
+            object-fit: cover;
+            justify-content: center;
+        }
+
+        .container {
+            height: 55px;
+        }
+
+        .botao-principal {
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+            object-fit: contain;
+            position: absolute;
+            top: 88%
+        }
+
+        .slogan {
+            position: absolute;
+            top: 75%;
+            font-size: 10px;
+        }
+
+        .logo_main {
+            width: 170px;
+            height: auto;
+            position: absolute;
+            top: 25%;
+        }
+
+        .corte1 {
+            position: absolute;
+            top: 38%;
+            left: 5%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 11;
+        }
+
+        .corte2 {
+            position: absolute;
+            top: 41%;
+            left: 16%;
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        .sobrenos {
+            font-family: "Big Shoulders", sans-serif;
+            position: absolute;
+            top: 39%;
+            left: 50%;
+            font-size: 15px;
+            color: white;
+            width: 129px;
+            height: 43px;
+        }
+
+        .nos {
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 42.5%;
+            left: 50%;
+            color: white;
+            font-size: 12px;
+            width: 175px;
+            z-index: 2;
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 53.5%;
+            background-color: white;
+            z-index: 3;
+        }
+
+        .cadeirante {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 60%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .controle {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 93%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .cadeira {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 61%;
+            left: 56%;
+            z-index: 2;
+        }
+
+        .filho {
+            width: 19px;
+            height: auto;
+            position: absolute;
+            top: 91%;
+            left: 9%;
+            z-index: 2;
+        }
+
+        .acessibilidade {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 18%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .game {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .conforto {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 60%;
+            left: 66%;
+            color: white;
+            width: 100px;
+            z-index: 2;
+        }
+
+        .familia {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 91%;
+            left: 18%;
+            color: white;
+            width: 130px;
+            z-index: 2;
+        }
+
+        .line2 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 117.5%;
+            background-color: white;
+            z-index: 9;
+        }
+
+
+        .line3 {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 118%;
+            background-color: white;
+        }
+
+        .combo {
+            position: absolute;
+            top: 121%;
+            left: 6%;
+            width: 330px;
+            height: auto;
+        }
+
+        .corte {
+            position: absolute;
+            top: 151%;
+            left: 6%;
+            width: 330px;
+            height: auto;
+        }
+
+        .design {
+            position: absolute;
+            top: 181%;
+            left: 6%;
+            width: 330px;
+            height: auto;
+        }
+
+        .combo,
+        .corte,
+        .design {
+            border: solid 4px;
+            border-color: white;
+            opacity: calc(75%);
+        }
+
+        .texto1,
+        .texto2,
+        .texto3 {
+            font-size: 11px;
+            font-family: "Open Sans", sans-serif;
+            color: white;
+        }
+
+        .preco1,
+        .preco2,
+        .preco3 {
+            font-size: 25px;
+            font-family: "Big Shoulders", sans-serif;
+            color: #ffbe0d
+        }
+
+        .preco1 {
+            position: absolute;
+            top: 143%;
+            left: 9%;
+        }
+
+        .preco2 {
+            position: absolute;
+            top: 173.5%;
+            left: 9%;
+        }
+
+        .preco3 {
+            position: absolute;
+            top: 205.5%;
+            left: 9%;
+        }
+
+        .texto1 {
+            position: absolute;
+            top: 128%;
+            left: 9%;
+            width: 220px;
+            cursor: default;
+        }
+
+        .texto2 {
+            position: absolute;
+            top: 157%;
+            left: 9%;
+            width: 260px;
+            cursor: default;
+        }
+
+        .texto3 {
+            position: absolute;
+            top: 189%;
+            left: 9%;
+            width: 240px;
+            cursor: default;
+        }
+
+        .titulo1 {
+            color: white;
+            font-size: 20px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 123%;
+            width: 290px;
+            left: 10%;
+            cursor: default;
+        }
+
+        .titulo2 {
+            color: white;
+            font-size: 20px;
+            top: 152%;
+            width: 330px;
+            left: 10%;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            cursor: default;
+        }
+
+        .titulo3 {
+            color: white;
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            top: 183%;
+            left: 10%;
+            cursor: default;
+        }
+
+        .botao1 {
+            position: absolute;
+            top: 143%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao2 {
+            position: absolute;
+            top: 173.3%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .botao3 {
+            position: absolute;
+            top: 205.5%;
+            left: 58%;
+            width: 115px;
+            height: 30px;
+        }
+
+        .line6 {
+            height: 1px;
+            top: 213%;
+        }
+
+        .avaliacoes-main {
+            display: none;
+        }
+
+        .line4,
+        .line5 {
+            display: none;
+        }
+
+        .ajuste {
+            height: auto;
+            width: 100%;
+            min-width: 320;
+            position: absolute;
+            top: 214%;
+            opacity: calc(90%);
+            border-top: solid 3px #ffffff;
+            border-bottom: solid 3px white;
+        }
+
+        .retangulo1 {
+            position: absolute;
+            top: 217%;
+            left: 7.5%;
+            width: 180px;
+            height: 80px;
+            border: solid 3px #ffbb00;
+            background-color: #ff000000;
+        }
+
+        .retangulo2 {
+            position: absolute;
+            top: 215.5%;
+            left: 5%;
+            width: 200px;
+            height: 100px;
+            border: solid 3px #ffbb00;
+            background-color: #14101000;
+        }
+
+        .ajuste-no-visual {
+            display: none;
+        }
+
+        .botao4:hover {
+            background-color: #d18f2c;
+        }
+
+
+
+        .onde {
+            position: absolute;
+            font-size: 20px;
+            top: 215%;
+            font-weight: lighter;
+            left: 5%;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .endereço {
+            position: absolute;
+            font-size: 11px;
+            top: 219%;
+            left: 5%;
+            width: 200px;
+            color: #ffffff;
+            font-family: "Lora", serif;
+        }
+
+        .titcontatos {
+            position: absolute;
+            font-size: 11px;
+            top: 228%;
+            left: 65%;
+            width: 100px;
+            color: #f0b65f;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .contatos1 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 231%;
+            left: 55%;
+            font-size: 11px;
+
+
+        }
+
+        .contatos2 {
+            color: white;
+            position: absolute;
+            font-family: "Big Shoulders", sans-serif;
+            top: 233.5%;
+            left: 55%;
+            font-size: 11px;
+
+        }
+
+        .local {
+            position: absolute;
+            top: 225%;
+            width: 170px;
+            height: auto;
+            left: 5%;
+            border-radius: 15px;
+        }
+
+        .Dia,
+        .Horario,
+        .segunda,
+        .sabado,
+        .hora1,
+        .hora2 {
+            font-family: "Big Shoulders", sans-serif;
+            color: white;
+            display: flex;
+            font-size: 11px;
+        }
+
+        .Dia {
+            position: absolute;
+            top: 217%;
+            left: 55%;
+        }
+
+        .Horario {
+            position: absolute;
+            top: 217%;
+            left: 80%;
+        }
+
+        .segunda {
+            position: absolute;
+            top: 219.5%;
+            left: 55%;
+        }
+
+        .sabado {
+            position: absolute;
+            top: 222%;
+            left: 55%;
+        }
+
+        .hora1 {
+            position: absolute;
+            top: 219.5%;
+            left: 80%;
+        }
+
+        .hora2 {
+            position: absolute;
+            top: 222%;
+            left: 80%;
+        }
+    }
+}
